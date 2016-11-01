@@ -26,4 +26,10 @@ public class SolutionTest {
         int num = solution.solution(input);
         assertEquals(num, 1);
     }
+    @Test
+    public void solutionMax() {
+       int[] input = { -2147483648, -1, 3, -4, 5, 1, -6, 2, 1,2147483647, 1};
+        int num = solution.solution(input);
+        assertEquals(num, 2);
+    }
 }
