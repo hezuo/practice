@@ -1,8 +1,5 @@
 package com.practice;
 
-
-import java.util.ArrayList;
-
 public class BinaryPractice {
 
     public int solution(int N) {
