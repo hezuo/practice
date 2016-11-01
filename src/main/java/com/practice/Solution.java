@@ -10,16 +10,18 @@ public class Solution {
             int maxSum = 0;
 
             int p = 0;
-            while(p >= 0 && p<index ){
-                minSum += A[p];
+            while( p < arrayLength){
+                if( p < index){
+                    minSum += A[p];
+                }
+
+                if(p > index){
+                    maxSum += A[p];
+                }
+
                 p++;
             }
 
-            p = index +1;
-            while( p < arrayLength){
-                maxSum += A[p];
-                p++;
-            }
 
             if(minSum == maxSum){
                 return index;
